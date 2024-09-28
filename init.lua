@@ -3,6 +3,6 @@ require('base/tabs')
 require('base/other')
 require('keys/main')
 
-require("config.lazy")
+require("base.lazy")
 
 vim.cmd 'colorscheme onedark'
