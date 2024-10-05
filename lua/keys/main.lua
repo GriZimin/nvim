@@ -9,3 +9,5 @@ nm('zp', '<cmd>FloatermNew python3<CR>')
 nm('A,', '<Cmd>BufferPrevious<CR>')
 nm('A.', '<Cmd>BufferNext<CR>')
 nm('Ac', '<Cmd>BufferClose<CR>')
+
+nm('<Space>f', '<Cmd>Telescope oldfiles<CR>')

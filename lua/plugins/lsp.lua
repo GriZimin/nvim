@@ -25,8 +25,9 @@ return {
 		  -- Alternatively specify preferred servers for a filetype (others will be ignored).
 		  preferred_servers = {
 			markdown = {},
-			python = { "pyright", "ruff_lsp" },
-			cpp = { "clangd" }
+			python = { "pyright" },
+			cpp = { "clangd" },
+			lua = { "lua_ls" },
 		  },
 		  prefer_local = true, -- Prefer locally installed servers over nix-shell
 		  -- Default config passed to all servers to specify on_attach callback and other options.
