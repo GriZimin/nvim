@@ -1,7 +1,5 @@
 require('keys/alias')
 
-im('jk', '<escape>')
-
 nm('t', '<cmd>Neotree<CR>')
 
 nm('zz', '<cmd>FloatermNew<CR>')
