@@ -13,6 +13,7 @@ return {
         "lukas-reineke/cmp-under-comparator",
     },
     config = function()
+		require("luasnip.loaders.from_vscode").lazy_load()
         local kind_icons = {
             Text = "󰉿",
             Method = "󰆧",
@@ -115,9 +116,9 @@ return {
             }),
             sources = {
                 { name = "luasnip", max_item_count = 3 },
-                { name = "nvim_lsp", max_item_count = 5 },
-                { name = "nvim_lua", max_item_count = 5 },
-                { name = "buffer", max_item_count = 5, keyword_length = 3 },
+                { name = "nvim_lsp", max_item_count = 3 },
+                { name = "nvim_lua", max_item_count = 3 },
+                { name = "buffer", max_item_count = 2, keyword_length = 3 },
                 { name = "nvim_lsp_signature_help", max_item_count = 5 },
                 {
                     name = "spell",
