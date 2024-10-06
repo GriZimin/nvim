@@ -1,9 +1,14 @@
 My neovim config, nothing special.
 
-To install, just
+Install
+--------
 ```
 cd ~/.config
 git clone https://github.com/GriZimin/nvim.git
 ```
 
-Dont forget to install lsp servers on your machine
+Dependencies: nerd-fonts, codelldb, clang
+
+```
+yay -S --needed ttf-nerd-fonts-symbols codelldb clang
+```
