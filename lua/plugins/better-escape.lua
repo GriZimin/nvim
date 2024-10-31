@@ -1,0 +1,12 @@
+return {
+	{
+	  "max397574/better-escape.nvim",
+	  opts = {
+		  i = {
+			  j = {
+				  k = "<esc>"
+			  }
+		  }
+	  }
+	}
+}
