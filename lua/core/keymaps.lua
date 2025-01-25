@@ -18,7 +18,7 @@ keymap.set("n", "<C-h>", "<C-w>h")
 keymap.set("n", "<C-l>", "<C-w>l")
 
 -- Quit
-keymap.set("n", "<leader>x", "<cmd>x<cr>", { noremap = true, silent = true, desc = "Save and Close"})
+keymap.set("n", "<leader>q", "<cmd>x<cr>", { noremap = true, silent = true, desc = "Save and Close"})
 keymap.set("n", "<leader>Q", "<cmd>xa<cr>", { noremap = true, silent = true, desc = "Save and Close All"})
 
 -- Disable highlighting
@@ -45,3 +45,9 @@ keymap.set("n", "<leader>rr", "<cmd>RunCode<cr>", { noremap = true, silent = tru
 keymap.set("n", "<leader>rf", "<cmd>RunFile<cr>", { noremap = true, silent = true, desc = "Run File" })
 keymap.set("n", "<leader>rc", "<cmd>RunClose<cr>", { noremap = true, silent = true, desc = "Stop running" })
 keymap.set("n", "<leader>rp", "<cmd>RunProject<cr>", { noremap = true, silent = true, desc = "Run project" })
+
+-- DAP
+keymap.set("n", "<leader>db", "<cmd>DapToggleBreakpoint<cr>", { noremap = true, silent = true, desc = "Toggle breakpoint" })
+keymap.set("n", "<leader>ds", "<cmd>DapNew<cr>", { noremap = true, silent = true, desc = "Start debugger" })
+keymap.set("n", "<leader>dt", "<cmd>DapTerminate<cr>", { noremap = true, silent = true, desc = "Terminate debug session" })
+keymap.set("n", "<leader>dd", "<cmd>DapStepOver<cr>", { noremap = true, silent = true, desc = "Step Over" })

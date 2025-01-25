@@ -6,7 +6,7 @@ return {
             cpp = {
               "cd $dir &&",
               "g++ $fileName ",
-              "-g -Wall -Wextra -Wfloat-equal -Wcast-align -Warray-bounds -Wdiv-by-zero -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -fsanitize=bounds -Wshadow -D_FORTIFY_SOURCE=0 -fsanitize=undefined -fno-sanitize-recover=all -Wformat=2 -DLOCAL -std=gnu++20 ",
+              "-g -Wall -Wextra -Wfloat-equal -Wcast-align -Warray-bounds -Wdiv-by-zero -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -fsanitize=bounds -Wshadow -D_FORTIFY_SOURCE=0 -fsanitize=undefined,address -fno-sanitize-recover=all -Wformat=2 -DLOCAL -std=gnu++20 ",
               "-o $fileNameWithoutExt &&",
               "$dir/$fileNameWithoutExt",
             },
@@ -28,7 +28,7 @@ return {
             float_hl = "Normal",
 
             -- Transparency (see ':h winblend')
-            blend = 0,
+            blend = 1,
         },
         better_term = { -- Toggle mode replacement
             clean = false, -- Clean terminal before launch
