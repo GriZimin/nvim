@@ -15,7 +15,7 @@ return {
         float = {
             close_key = "<ESC>",
             -- Window border (see ':h nvim_open_win')
-            border = "double",
+            border = "rounded",
 
             -- Num from `0 - 1` for measurements
             height = 0.8,

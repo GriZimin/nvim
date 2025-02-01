@@ -1,5 +1,3 @@
-require("core.lazy")
-require("core.settings")
-require("core.keymaps")
-
-require("onedark").load()
+require("core/lazy")
+require("settings/common")
+require("settings/hotkeys")
