@@ -2,6 +2,11 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
+local ok, _ = pcall(vim.cmd, 'colorscheme oldworld')
+if not ok then
+  vim.cmd 'colorscheme default' -- if the above fails, then use default
+end
+
 opt.relativenumber = true
 opt.number = true
 

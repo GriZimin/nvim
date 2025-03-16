@@ -27,7 +27,6 @@ return {
 			  type = 'server',
 			  port = "${port}",
 			  executable = {
-				-- CHANGE THIS to your path!
 				command = '/usr/bin/codelldb',
 				args = {"--port", "${port}"},
 			  }
